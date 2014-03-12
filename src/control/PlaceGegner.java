@@ -22,9 +22,9 @@ public class PlaceGegner
 	
 	private boolean bReady;	
 	
-	public PlaceGegner(GUI gui, int x, int y)
+	public PlaceGegner(GUI gui, int x, int y, boolean hide)
 	{
-		feld = new Spielfeld(x, y, false);		
+		feld = new Spielfeld(x, y, hide);		
 		this.gui = gui;
 		
 		schiffe = new LinkedList<Schiff>();

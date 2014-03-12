@@ -16,11 +16,11 @@ public class Seeschlacht {
 		PlaceSchiff placeSpieler = new PlaceSchiff(gui, 300, 300);		
 		placeSpieler.Random();		
 		//while( !placeSpieler.isReady() )
-		//	gui.zeichne();		
+			//gui.zeichne();		
 		Spielfeld spieler = placeSpieler.getSpielfeld();
 		List<Schiff> schiffeMe = placeSpieler.getSchiffe();
 		
-		PlaceGegner placeGegner = new PlaceGegner(gui, 300, 10);		
+		PlaceGegner placeGegner = new PlaceGegner(gui, 300, 10, true);		
 		placeGegner.Random();
 		Spielfeld gegner = placeGegner.getSpielfeld();
 		List<Schiff> schiffeGegner = placeGegner.getSchiffe();
