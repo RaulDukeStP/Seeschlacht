@@ -2,6 +2,7 @@ package spielfeld;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -104,8 +105,16 @@ public class GUI extends JPanel
          }
          
          if(winner != null)
-        	 g.drawString(winner + " WINS!", 400, 400);
-
+         {
+        	 g.setColor(new Color (1.0f, 0.1f, 0.1f));
+        	 g.setFont(new Font("TimesRoman", Font.PLAIN, 20)); 
+        	 g.drawString(winner + " WINS!", 350, 260);
+         }
+         
+         g.setColor(new Color (1.0f, 0.1f, 0.1f));
+    	 g.setFont(new Font("TimesRoman", Font.PLAIN, 20)); 
+    	 g.drawString("GEGNER", 20, 140);    	 
+    	 g.drawString("SPIELER", 20, 440);
 
 	}
 	

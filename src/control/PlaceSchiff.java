@@ -105,16 +105,19 @@ public class PlaceSchiff implements MouseMotionListener, MouseListener
 	
 	public void mouseMoved(MouseEvent e)
 	{		
-		for (Schiff schiff : schiffe)
-        {
-            schiff.setSchifftoSpielfeld(feld);
-        }
+		
 				
 		int x = feld.getXCoord(e.getX());
         int y = feld.getYCoord(e.getY());      
         
-        if( x >= 0 && x < 10 && y >= 0 && y < 10 && nSchiffCounter < 10)        
+        if( x >= 0 && x < 10 && y >= 0 && y < 10 && nSchiffCounter < 10)   
+        {
+        	for (Schiff schiff : schiffe)
+            {
+                schiff.setSchifftoSpielfeld(feld);
+            }
         	shadow.move(feld, x, y);
+        }        	
         gui.zeichne();
         
 	}

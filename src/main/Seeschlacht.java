@@ -13,7 +13,7 @@ public class Seeschlacht {
 	public static void main(String[] args) {
 		GUI gui = new GUI();
 		
-		PlaceSchiff placeSpieler = new PlaceSchiff(gui, 10, 10);		
+		PlaceSchiff placeSpieler = new PlaceSchiff(gui, 300, 300);		
 		placeSpieler.Random();		
 		//while( !placeSpieler.isReady() )
 		//	gui.zeichne();		
